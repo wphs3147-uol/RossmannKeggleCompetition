@@ -1,6 +1,5 @@
-feature_engineering_mock_sales_student_notebook*.ipynb
-rossmann_forecasting_full_workshop_notebook.ipynb
-main_notebook.ipynb
+*.ipynb
+!notebooks/rossmann_forecasting_demo.ipynb
 
 # Notebook-generated artefacts.
 .ipynb_checkpoints/
