@@ -25,7 +25,3 @@ The demonstration includes:
 4. Comparing a seasonal baseline with a tree-based model.
 5. Evaluating the forecast with MAE and RMSE.
 6. Inspecting which features drive the prediction.
-
-The original workshop and student-answer notebooks are retained locally for
-reference but are ignored by Git. This repository's public-facing notebook is
-the concise, runnable demonstration above.
