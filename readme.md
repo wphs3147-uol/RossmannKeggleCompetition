@@ -1,4 +1,11 @@
-# Rossmann Store Sales Forecasting Project
+# Rossmann Store Sales Forecasting
+
+An end-to-end, reproducible example of feature engineering and time-aware
+evaluation for retail sales forecasting.
+
+The portfolio entry point is [`notebooks/rossmann_forecasting_demo.ipynb`](notebooks/rossmann_forecasting_demo.ipynb).
+It uses the included mock sales data so it can run without Kaggle credentials
+or hidden test labels.
 
 Kaggle competition page: https://www.kaggle.com/competitions/rossmann-store-sales/
 
@@ -10,15 +17,15 @@ The dataset contains daily observations for stores, including variables such as 
 
 In this workshop version, we do not use the official Kaggle test set for evaluation because the true sales values are hidden. Instead, we create our own transparent test period by holding out the final month of the labelled training data. The model is trained on earlier dates and then used to forecast sales for the held-out final month, allowing the predictions to be compared with the true sales values.
 
-The workflow includes:
+The demonstration includes:
 
-1. Loading and inspecting the Rossmann data.
-2. Merging daily sales data with store-level information.
-3. Creating a time-based train/test split.
-4. Building a simple baseline forecast.
-5. Engineering useful features from dates, promotions, store information, and recent sales history.
-6. Training XGBoost regression models.
-7. Evaluating forecasts using RMSPE.
-8. Inspecting prediction errors and feature importance.
+1. Auditing a small retail dataset.
+2. Creating calendar, lag, and rolling-window features.
+3. Splitting chronologically to avoid leakage.
+4. Comparing a seasonal baseline with a tree-based model.
+5. Evaluating the forecast with MAE and RMSE.
+6. Inspecting which features drive the prediction.
 
-The project illustrates the importance of feature engineering in real-world forecasting problems.
+The original workshop and student-answer notebooks are retained locally for
+reference but are ignored by Git. This repository's public-facing notebook is
+the concise, runnable demonstration above.
